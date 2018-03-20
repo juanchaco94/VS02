@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Schedule Planner</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div   class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,13 +17,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle>" data-toggle="dropdown">Registro de Usuarios<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Tipos de documento", "Index", "documentTypes")</li>
+                            <li>@Html.ActionLink("Rol del usuario", "Index", "rols")</li>
+                            <li>@Html.ActionLink("Genero", "Index", "genders")</li>
+                            <li>@Html.ActionLink("Datos personales", "Index", "people")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle>" data-toggle="dropdown">Información de carrera<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Especialidad", "Index", "Specialties")</li>
+                            <li>@Html.ActionLink("Programa de formación", "Index", "trainingPrograms")</li>
+                            <li>@Html.ActionLink("Trimestres", "Index", "trimesters")</li>
+                            <li>@Html.ActionLink("Jornadas", "Index", "workingDays")</li>
+                            <li>@Html.ActionLink("Ficha", "Index", "data")</li>
+                            <li>@Html.ActionLink("Grupos", "Index", "groups")</li>
+                            <li>@Html.ActionLink("Sedes", "Index", "Seats")</li>
+                            <li>@Html.ActionLink("Ambientes de formación", "Index", "ambients")</li>
+                        </ul>
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -32,8 +54,8 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="text-center">
+            <p>&copy; @DateTime.Now.Year - Schedule Planner Application </p>
         </footer>
     </div>
 

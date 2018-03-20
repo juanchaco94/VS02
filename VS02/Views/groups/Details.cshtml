@@ -1,0 +1,50 @@
+﻿@model VS02.Models.group
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>group</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ambient.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ambient.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.data.numberData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data.numberData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trimester.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trimester.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdGroup }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

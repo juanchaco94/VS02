@@ -213,13 +213,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803192034162_1603180001.cs" />
-    <Compile Include="Migrations\201803192034162_1603180001.Designer.cs">
-      <DependentUpon>201803192034162_1603180001.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803192048005_VS0001.cs" />
-    <Compile Include="Migrations\201803192048005_VS0001.Designer.cs">
-      <DependentUpon>201803192048005_VS0001.cs</DependentUpon>
+    <Compile Include="Migrations\201803240157412_prueba1.cs" />
+    <Compile Include="Migrations\201803240157412_prueba1.Designer.cs">
+      <DependentUpon>201803240157412_prueba1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -381,11 +377,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803192034162_1603180001.resx">
-      <DependentUpon>201803192034162_1603180001.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803192048005_VS0001.resx">
-      <DependentUpon>201803192048005_VS0001.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803240157412_prueba1.resx">
+      <DependentUpon>201803240157412_prueba1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

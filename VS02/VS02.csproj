@@ -213,13 +213,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803192034162_1603180001.cs" />
-    <Compile Include="Migrations\201803192034162_1603180001.Designer.cs">
-      <DependentUpon>201803192034162_1603180001.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803192048005_VS0001.cs" />
-    <Compile Include="Migrations\201803192048005_VS0001.Designer.cs">
-      <DependentUpon>201803192048005_VS0001.cs</DependentUpon>
+    <Compile Include="Migrations\201804042352570_test.cs" />
+    <Compile Include="Migrations\201804042352570_test.Designer.cs">
+      <DependentUpon>201804042352570_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -248,12 +244,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Image\casa_318-119276.jpg" />
-    <Content Include="Image\derechos-de-copia-ceo_318-33075.jpg" />
-    <Content Include="Image\equipo_318-72702.jpg" />
-    <Content Include="Image\lista-llena-de-cuadros_318-72822.jpg" />
-    <Content Include="Image\Logo.png" />
-    <Content Include="Image\Logo_opt.png" />
+    <Content Include="Image\fall-wallpaper-1390-1522-hd-wallpapers.jpg" />
+    <Content Include="Image\sp-logo.png" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -380,11 +372,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803192034162_1603180001.resx">
-      <DependentUpon>201803192034162_1603180001.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803192048005_VS0001.resx">
-      <DependentUpon>201803192048005_VS0001.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804042352570_test.resx">
+      <DependentUpon>201804042352570_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

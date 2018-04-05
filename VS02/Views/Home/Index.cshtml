@@ -1,30 +1,20 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div>
-
-</div>
-<div id="nav" class="text-center container-fluid">
-    <br />
-    <div class="row jumbotron  alert-warning">         
-        <div class="col">
-            <img src="~/Image/Logo_opt.png" />
-        </div>  
-    </div> 
-</div>
-
-<div class="row">
-    <div class="col-md-4 text-center">
-        <img src="~/Image/casa_318-119276.jpg" />
-        <p>@Html.ActionLink("Sedes","Index","Seats")<p/>
+<style>
+    body {
+        background-image: url('../../Image/fall-wallpaper-1390-1522-hd-wallpapers.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #464646;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="centrado-porcentual">
+            <h1 class="text-center" style="color:white">Schedule Planner Aplication</h1>
+        </div>
     </div>
-    <div class="col-md-4 text-center">
-        <img src="~/Image/equipo_318-72702.jpg" />
-        <p>@Html.ActionLink("Usuarios", "Index", "people")<p />       
-    </div>
-    <div class="col-md-4 text-center">
-        <img src="~/Image/lista-llena-de-cuadros_318-72822.jpg" />
-        <p>@Html.ActionLink("Programas de formación", "Index", "trainingPrograms")<p />
-    </div>
-</div>
+</body>

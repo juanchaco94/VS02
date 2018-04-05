@@ -7,13 +7,13 @@ namespace VS02.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class VS0001 : IMigrationMetadata
+    public sealed partial class test : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(VS0001));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(test));
         
         string IMigrationMetadata.Id
         {
-            get { return "201803192048005_VS0001"; }
+            get { return "201804042352570_test"; }
         }
         
         string IMigrationMetadata.Source

@@ -6,10 +6,22 @@
     <title>@ViewBag.Title - Schedule Planner</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        #layout{
+            align-content:center;
+        }
+        body {
+            background-image: url('../../Image/afternoon-a-beautiful-tree-wallpapers-hd-free-download-wallpaper-nature.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    </style>
 
 </head>
+
 <body>
-    <div   class="navbar navbar-default navbar-fixed-top">
+    <div  id="layout" class="navbar navbar-default navbar-fixed-top" style="background-color:#EB984E">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,6 +32,7 @@
                 
             </div>
             <div class="navbar-collapse collapse">
+                
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
@@ -53,10 +66,7 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer class="text-center">
-            <p>&copy; @DateTime.Now.Year - Schedule Planner Application </p>
-        </footer>
+        
     </div>
 
     @Scripts.Render("~/bundles/jquery")

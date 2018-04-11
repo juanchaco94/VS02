@@ -213,9 +213,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804042352570_test.cs" />
-    <Compile Include="Migrations\201804042352570_test.Designer.cs">
-      <DependentUpon>201804042352570_test.cs</DependentUpon>
+    <Compile Include="Migrations\201804082334026_database make.cs" />
+    <Compile Include="Migrations\201804082334026_database make.Designer.cs">
+      <DependentUpon>201804082334026_database make.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -359,6 +359,7 @@
     <Content Include="Views\workingDays\Details.cshtml" />
     <Content Include="Views\workingDays\Edit.cshtml" />
     <Content Include="Views\workingDays\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdministrador.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -372,8 +373,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804042352570_test.resx">
-      <DependentUpon>201804042352570_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804082334026_database make.resx">
+      <DependentUpon>201804082334026_database make.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

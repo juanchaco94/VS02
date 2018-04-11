@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div  id="layout" class="navbar navbar-default navbar-fixed-top" style="background-color:#EB984E">
+    <div  id="layout" class="navbar navbar-link navbar-fixed-top" style="background-color:black">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,28 +37,7 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle>" data-toggle="dropdown">Registro de Usuarios<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Tipos de documento", "Index", "documentTypes")</li>
-                            <li>@Html.ActionLink("Rol del usuario", "Index", "rols")</li>
-                            <li>@Html.ActionLink("Genero", "Index", "genders")</li>
-                            <li>@Html.ActionLink("Datos personales", "Index", "people")</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle>" data-toggle="dropdown">Información de carrera<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Especialidad", "Index", "Specialties")</li>
-                            <li>@Html.ActionLink("Programa de formación", "Index", "trainingPrograms")</li>
-                            <li>@Html.ActionLink("Trimestres", "Index", "trimesters")</li>
-                            <li>@Html.ActionLink("Jornadas", "Index", "workingDays")</li>
-                            <li>@Html.ActionLink("Ficha", "Index", "data")</li>
-                            <li>@Html.ActionLink("Grupos", "Index", "groups")</li>
-                            <li>@Html.ActionLink("Sedes", "Index", "Seats")</li>
-                            <li>@Html.ActionLink("Ambientes de formación", "Index", "ambients")</li>
-                        </ul>
-                    </li>
+                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -66,7 +45,6 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        
     </div>
 
     @Scripts.Render("~/bundles/jquery")

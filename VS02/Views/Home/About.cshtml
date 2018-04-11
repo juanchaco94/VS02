@@ -1,7 +1,60 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<style>
+    body{
+        min-height:760px;
+    }
+    #Contenedor_General{
+    }
+    p{
+        text-align:justify;
+    }
+    #Fondo_Info_de_contacto{
+        background-color:#808080;
+        color:white;
+    }
+</style>
+<body >
+    <div id="Contenedor_General" class="container">
 
-<p>Use this area to provide additional information.</p>
+        <div class="row" style="height:500px">
+            <div class="container" style="min-height:50px">
+                <br />
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <h1>About</h1>
+                <p>Schedule Planner Application es una herramienta web diseñada y desarrollada para brindar una solucion a la gestión de los horarios del Centro de Electricidad, Electronica y Telecomunicaciones CEET.</p>
+            </div>
+            <div class="container" style="min-height:50px">
+                <br />
+            </div>
+            <div class="col-md-4 col-md-offset-1 row">
+                <h4 style="font-weight:bold">More Information</h4>
+                <p>Este aplicativo web fue diseñado y desarrollado por Juan Pablo castillo Jimenez y Cesar Leandro Pestana. Para más información puedes ponerte en contacto con nuestra area de soporte</p>
+                <br />
+                <a href="@Url.Action("Contact","Home")" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Suport</a>
+            </div>
+        </div>
+        <div id="Fondo_Info_de_contacto" class="row" style="min-height:300px">
+            <div style="height:80px">
+                <hr />
+                <br />
+            </div>
+            <div class="col-md-3 col-md-offset-4">
+                <p style="font-weight:bold">Contacto:</p>
+                <p>Juan Pablo Castillo Jimenez</p>
+                <p>Desarrollador</p>
+                <p>Tel: 316 865 4142</p>
+            </div>
+            <div class="col-md-3 col-md-offset-0">
+                <br />
+                <p>Cesar Leandro Pestana</p>
+                <p>Desarrollador</p>
+                <p>Tel: 315 364 1542</p>
+            </div>            
+        </div>
+    </div>
+
+
+</body>

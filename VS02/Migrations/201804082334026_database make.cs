@@ -3,7 +3,7 @@ namespace VS02.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test : DbMigration
+    public partial class databasemake : DbMigration
     {
         public override void Up()
         {

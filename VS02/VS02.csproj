@@ -244,7 +244,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\1920_1080_20091116104102275590.jpg" />
     <Content Include="Image\fall-wallpaper-1390-1522-hd-wallpapers.jpg" />
+    <Content Include="Image\luisgyg_macbook_air.jpg" />
+    <Content Include="Image\sena-100x100.jpg" />
     <Content Include="Image\sp-logo.png" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -359,7 +362,7 @@
     <Content Include="Views\workingDays\Details.cshtml" />
     <Content Include="Views\workingDays\Edit.cshtml" />
     <Content Include="Views\workingDays\Index.cshtml" />
-    <Content Include="Views\Shared\_LayoutAdministrador.cshtml" />
+    <Content Include="Views\Shared\_LayoutHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

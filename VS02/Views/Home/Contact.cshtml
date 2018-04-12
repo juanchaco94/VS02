@@ -1,17 +1,55 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<style>
+    #Imagen {
+        background-image: url('../../Image/luisgyg_macbook_air.jpg');
+        height: 500px;
+    }
+    #div2{
+        background-color:#d0c8c8;
+        height: 500px;
+    }
+    p{
+        text-align:justify;
+    }
+</style>
+<html>
+<body>
+    <div class="container">
+        <div id="Imagen" class="row">
+            
+        </div>
+        <div id="div2" class="row">
+           <div class="" style="min-height:250px">
+               
+           </div>
+            <div class="col-md-2 col-md-offset-1">
+                <h3>Usuarios</h3>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
+                <a class="btn btn-primary" href=@Url.Action("Index","people") role="button">MORE</a>
+            </div>
+            <div class="col-md-2">
+                <h3>Ambientes</h3>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
+                <a class="btn btn-primary" href=@Url.Action("Index","ambients") role="button">MORE</a>
+            </div>
+            <div class="col-md-2">
+                <h3>Sedes</h3>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
+                <a class="btn btn-primary" href=@Url.Action("Index","Seats") role="button">MORE</a>
+            </div>
+            <div class="col-md-2">
+                <h3>Programas</h3>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
+                <a class="btn btn-primary" href=@Url.Action("Index","trainingPrograms") role="button">MORE</a>
+            </div>
+            <div class="col-md-2">
+                <h3>Fichas</h3>
+                <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.</p>
+                <a class="btn btn-primary" href=@Url.Action("Index","data") role="button">MORE</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
